@@ -1,0 +1,51 @@
+body{
+    background-color: black;
+}
+.cm{
+    margin: 5rem 30rem 0 42rem;   
+}
+
+.ctt{
+
+    border: 1px solid white;
+    padding: 20px;
+    border-radius:8px;
+    margin: 2rem 30rem 0 30rem;
+    text-align: center;
+    line-height:35px;
+}
+
+.lnk{
+    width: 30px;
+    height: 30px;
+    margin-top: 18px;
+     
+   
+}
+.tel{
+    width: 30px;
+    height: 30px;
+    
+}
+
+ .git{
+    width: 35px;
+    height: 35px;
+    
+ }
+
+ @media screen and (max-width: 1200px) {
+
+    .ctt{
+
+         
+        margin: 2rem 1rem 0 1rem;
+        text-align: center;
+        line-height:35px;
+    }
+    
+    .cm{
+        margin: 5rem 1rem 0 10rem;   
+    }
+
+ }

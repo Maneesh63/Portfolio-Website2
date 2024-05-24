@@ -1,0 +1,27 @@
+{% extends 'common.html' %}
+
+{% load static %}
+ 
+{% block title %}Contact{% endblock %}
+ 
+{% block styles %}
+<link rel="stylesheet" href="{% static 'contact.css' %}">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+{% endblock %}
+
+{% block content %}
+
+<h2 class="cm">Contact Me</h2>
+ 
+<div class="ctt">
+<p class="mail"><i class="fa fa-envelope"></i> maneeshmaneesh391@gmail.com</p>
+<p><i class="fa fa-phone" aria-hidden="true"></i> +91 9360668724</p>
+<a href="#"><img style="height: 30px; width:30px" class="lnk" src="{% static 'images/linkedin.png' %}"></a>
+
+<a href="#">
+<img class="git" style="height: 30px; width:30px" src="{% static 'images/git1.jpg' %}">
+</a>
+
+</div>
+{% endblock %}

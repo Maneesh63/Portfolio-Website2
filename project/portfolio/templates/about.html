@@ -1,0 +1,38 @@
+{% extends 'common.html' %}
+
+{% load static %}
+ 
+{% block title %}About{% endblock %}
+ 
+{% block styles %}
+
+     
+    <link rel="stylesheet" href="{% static 'about.css' %}">
+
+    {% endblock %}
+
+{% block content %}
+   
+    <h3 class="hd">About Me</h3>
+
+    <img class="dp" src="{% static 'images/dp1.jpg' %}">
+    <div class="abt">
+    
+    <p>Education</p> 
+
+     <P><i class="fa-solid fa-check-to-slot"></i> Bachelor Of Computer Application</P>   
+
+    <p>2021 - 2024</p>
+
+    <p>CGPA: 7.5</p>
+
+     <p class="des">Welcome, folks! My name is Maneesh, and I'm from Tamil Nadu. 
+        I completed my schooling in the Tamil Nadu state board. After that,
+         I pursued my bachelor's in Computer Application in Bangalore. During my studies, 
+         I developed a keen interest in coding and started learning web development, 
+         specializing in Python and Django. I learned a lot by building projects and 
+         attending free courses. As a result, 
+         I gained the skills to independently build projects.</p>
+   </div>
+  
+   {% endblock %}

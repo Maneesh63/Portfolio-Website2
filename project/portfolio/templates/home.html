@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+     
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+     
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Mane<span>esh</span></div>
+        <ul class="nav-links">
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'project' %}">Projects</a></li>
+            <li><a href="{% url 'skills' %}">Skills</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Portfolio</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menu-links">
+            <ul>
+                <li><a href="{% url 'about' %}" onclick="togglemenu()">About</a></li>
+                <li><a href="{% url 'project' %}" onclick="togglemenu()">Projects</a></li>
+                <li><a href="{% url 'skills' %}" onclick="togglemenu()">Skills</a></li>
+                <li><a href="{% url 'contact' %}" onclick="togglemenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+     
+
+
+    
+   <div class="full">    
+
+     <img class="p_pic" src="{% static 'images/picme.png' %}">
+     
+     <div class="text">
+         <p class="ho">Hello,I'm</p>
+         <h3 class="name">Maneesh M</h3>
+         <p class="des">Backend Developer</p>
+         <p>It looks like ,When Backend Developer Tries to build Personal Portfolio</p>
+        </div>
+   </div>
+
+   
+      <div class="cvct">
+
+        <button type="button"  class="cv">Download Resume</button>
+    
+
+        <button type="button" class="ct">Contact Info</button>
+      </div>
+   
+
+      <div class="sl">
+    
+        <a href="https://www.linkedin.com/in/maneesh63/">
+    
+        <img class="linkedin" src="{% static '/images/linkedin.png' %}">
+         </a>
+    
+       <a href="#">
+        <img class="git" src="{% static 'images/git1.jpg' %}">
+        </a>
+
+        </div>
+
+        
+    
+    
+    <script>
+        function togglemenu(){
+            const menu = document.querySelector('.menu-links');
+            const icon = document.querySelector('.hamburger-icon');
+            menu.classList.toggle('open');
+            icon.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

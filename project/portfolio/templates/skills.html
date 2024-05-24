@@ -1,0 +1,34 @@
+{% extends 'common.html' %}
+
+{% load static %}
+ 
+{% block title %}About{% endblock %}
+ 
+{% block styles %}
+
+     
+    <link rel="stylesheet" href="{% static 'skills.css' %}">
+
+    {% endblock %}
+
+{% block content %}
+
+ 
+<div class="skill">
+
+    <p class="item"><i class="fa-brands fa-python"></i>Python</p>
+
+    <p class="item"><i class="fa-brands fa-html5"></i>Django</p>
+
+    <p class="item"><i class="fa-brands database"></i>MySQL</p>
+
+    <p class="item"><i class="fa-brands fa-github"></i>Git & GitHub</p>
+
+    <p class="item"><i class="fa-brands fa-js"></i>JavaScript</p>
+
+    <p class="item"><i class="fa-brands fa-html5"></i>HTML5</p>
+
+    <P class="item"><i class="fa-brands fa-css3-alt"></i>CSS</P>
+</div>
+
+{% endblock %}

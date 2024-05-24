@@ -1,0 +1,50 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+}
+.des{
+    margin: 0 16rem 0 0;
+    color: rgb(255, 255, 255);
+    line-height: 25px;
+   
+}
+.hd{
+  margin: 0 0 0 37.5rem;
+}
+  .abt{
+  margin:  5rem 0 25rem;
+  line-height: 30px;
+}
+ .dp{
+  width: 250px;
+   height: 500px;
+  float: left;
+  margin: 0rem 2rem 0 20rem;
+  border-radius: 15px;
+  border: 1px solid red;
+}
+  .yr{
+   float: right;
+}  
+
+@media screen and (max-width: 1200px) {
+
+  .dp{
+    margin:1rem 0 0 4rem ;
+    float: none;
+  }
+  .abt{
+    margin: 2rem 0 0 2rem;
+    line-height: 30px;}
+
+    .des{
+      margin: 1rem 1rem 0 .5rem;
+      color: rgb(255, 255, 255);
+      line-height: 25px;
+      
+    }
+.hd{
+  margin:0 0 0 4.5rem;
+}
+}

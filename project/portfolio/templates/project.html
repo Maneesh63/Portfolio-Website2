@@ -1,0 +1,74 @@
+{% extends 'common.html' %}
+
+{% load static %}
+ 
+{% block title %}About{% endblock %}
+ 
+{% block styles %}
+
+<link rel="stylesheet" href="{% static 'project.css' %}">
+
+{% endblock %}
+
+{% block content %}
+ 
+  
+  <div class="container mx-auto mt-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+
+          <img src="{% static 'images/blog.jpg' %}"  style="height: 200px;" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title" style="color: rgb(0, 0, 0);">Blog</h5>
+            <p class="card-text" style="color: rgb(0, 0, 0);">Where you can perform CRUD It has secure authentication and users can personalize their
+              profiles with pictures and short bio, and there’s also a comment section to engage with each other
+              </p>
+
+            <a href="#" style="color: rgb(0, 0, 0);" class="btn mr-2"><i class="fas fa-link"></i> site</a>
+            <a href="https://github.com/Maneesh63/Djnago-Blog-Website" style="color: rgb(0, 0, 0);" class="btn"><i class="fab fa-github"></i> github</a>
+          </div>
+        </div>
+      </div>
+      
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+  
+            <img src="{% static 'images/ecom.jpg' %}"  style="height: 200px;" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(0, 0, 0);">Ecommerce Website</h5>
+              <p class="card-text" style="color: rgb(0, 0, 0);">ecommerce website featuring CRUD operations for products and carts, an authentication
+                system with email-based password reset, personalized dashboards, API payment integration,.ect</p>
+  
+              <a href="#" style="color: rgb(0, 0, 0);" class="btn mr-2"><i class="fas fa-link"></i> site</a>
+              <a href="https://github.com/Maneesh63/Ecommerce-Website-With-Django" style="color: rgb(0, 0, 0);" class="btn"><i class="fab fa-github"></i> github</a>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+    
+              <img src="{% static 'images/auth.jpg' %}"  style="height: 200px;" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title" style="color: rgb(0, 0, 0);">Authentication System</h5>
+                <p class="card-text" style="color: rgb(0, 0, 0);"> Developed an authentication system for a web application, enabling users to sign up, log in securely, and reset
+                  passwords via Gmail integration and users to change their current passwords  
+                  </p>
+    
+                <a href="#" style="color: rgb(0, 0, 0);" class="btn mr-2"><i class="fas fa-link"></i> site</a>
+                <a href="https://github.com/Maneesh63/Authentication-system-with-Django" style="color: rgb(0, 0, 0);" class="btn"><i class="fab fa-github"></i> github</a>
+              </div>
+            </div>
+            </div>
+       
+     
+     
+        </div>
+    </div>
+ 
+     
+
+  
+ 
+{% endblock %}
